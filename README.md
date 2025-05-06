@@ -52,5 +52,3 @@ The project includes unit tests to verify that the application correctly handles
 
 - **unittest**: Python’s built-in library for unit testing.
 - **io.StringIO**: Used to capture print statements for validation in tests.
-
-You can run the tests using:
