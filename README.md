@@ -1,6 +1,6 @@
 # 3-Day Weather Forecast App
 
-Fetch a 3-day weather forecast using the OpenWeatherMap API. Simple CLI app that will be used to study secure software development design principles. 
+Fetch a 3-day weather forecast using the OpenWeatherMap API. CLI app that will be used to study secure software development design principles. This project has been hardened with client-side validation principles and error handling.
 
 ## Features 
 - Retrieves a 3-day weather forecast based on ZIP code and country code.
