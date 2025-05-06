@@ -30,11 +30,11 @@ Fetch a 3-day weather forecast using the OpenWeatherMap API. CLI app that will b
   - `time_requested`: The timestamp when the request was made.
   - `time_written`: The timestamp when the forecast was written to the text file.
  
-### Tests
+## Tests
 
 The project includes unit tests to verify that the application correctly handles various scenarios like valid and invalid ZIP codes, API responses, and file handling.
 
-#### Test Cases
+### Test Cases
 
 1. **test_valid_forecast_output**: 
    - Tests whether the forecast output includes day information and whether the forecast is saved correctly in `forecast1.txt`.
@@ -48,7 +48,7 @@ The project includes unit tests to verify that the application correctly handles
 4. **test_handling_of_bad_api_key**:
    - Tests if the program handles an incorrect API key gracefully, showing the correct error message.
 
-#### Dependencies
+### Dependencies
 
 - **unittest**: Python’s built-in library for unit testing.
 - **io.StringIO**: Used to capture print statements for validation in tests.
