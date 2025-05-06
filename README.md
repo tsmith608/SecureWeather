@@ -52,3 +52,22 @@ The project includes unit tests to verify that the application correctly handles
 
 - **unittest**: Python’s built-in library for unit testing.
 - **io.StringIO**: Used to capture print statements for validation in tests.
+
+## Threats Mitigated Through Validation
+
+1. **Invalid ZIP Codes**: Ensures that only valid 5-digit ZIP codes are accepted, preventing malformed or malicious input that could lead to incorrect API queries.
+   
+2. **Incorrect Country Code**: Validates that only valid 2-letter country codes are entered, avoiding errors in the API request format and ensuring correct location data is used.
+
+3. **API Key Abuse**: By ensuring that an API key is properly set and validated before making requests, it prevents the use of invalid or unauthorized keys, protecting the service from unauthorized access.
+
+4. **Buffer Overflow**: Input validation prevents excessively long or malformed user input that could potentially cause buffer overflows or crash the application.
+
+5. **SQL Injection or Command Injection**: Although not directly applicable in this case, ensuring that inputs like ZIP codes and country codes are strictly validated prevents the possibility of injection attacks in systems that may interact with databases or system commands.
+
+6. **Invalid File Writing**: Ensures that file paths and file writing operations are valid, reducing risks of errors, directory traversal, or attempts to overwrite important files.
+
+##Unhandled Threats
+
+1. If the OpenWeatherMap API becomes unavailable or returns an unexpected error (e.g., network failure, rate limiting, etc.), the current implementation does not handle these failures gracefully.
+
