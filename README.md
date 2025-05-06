@@ -23,7 +23,7 @@ Fetch a 3-day weather forecast using the OpenWeatherMap API. Simple CLI app that
    python Weather.py
 5. Enter your zip code and country code when prompted.
 
-### Log File:
+## Log File:
 - The request details are saved in a JSON file (`forecast_log.json`).
 - Each entry contains:
   - `zip_code`: The entered ZIP code.
